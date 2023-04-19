@@ -1,0 +1,94 @@
+﻿@page
+@model CostControlApp.Pages.Identity.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Sheet1</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sheet1.NrCrt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sheet1.NrCrt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sheet1.CodProdus)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sheet1.CodProdus)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sheet1.DimensiuniMm)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sheet1.DimensiuniMm)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sheet1.Denumire)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sheet1.Denumire)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sheet1.Greutate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sheet1.Greutate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sheet1.Buc)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sheet1.Buc)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sheet1.Mp)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sheet1.Mp)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sheet1.Ml)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sheet1.Ml)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sheet1.MpSistem)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sheet1.MpSistem)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sheet1.Culoare)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sheet1.Culoare)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sheet1.NrBucPePachet)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sheet1.NrBucPePachet)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sheet1.Finisaj)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sheet1.Finisaj)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Sheet1.ItemId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

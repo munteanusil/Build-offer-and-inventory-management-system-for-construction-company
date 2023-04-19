@@ -1,0 +1,63 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <br>
+    <br>
+
+    <h1 class="display-4"> 👋 Welcome! </h1>
+   @* <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+    <br>
+    <br>
+    <h2> Aceasta este aplicația BuildOffer!</h2>
+    <p>Utilă pentru o firmă aflată în procesul de licitație și ofertare pentru proiecte de construcție.</p>
+    <br>
+    <br>
+    <p> <strong>
+        Iată câteva caracteristici pe care aplicatia le include:
+        </strong>
+    </p>
+    <br>
+    
+    <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Managementul ofertelor
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+      Ajuta la gestionarea procesului de ofertare pentru proiectele de construcții, permițând utilizatorilor să creeze și să editeze oferte.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Calculul costurilor
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+                   Ajuta la calcularea costurilor de construcție prin utilizarea unor metode standard de calculare.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Urmărirea ofertelor
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+                    Utilizatorii  pot urmări starea ofertelor trimise, inclusiv refolosirea unui cadru de ofertare sau stergerea unei oferte mai vechi.
+      </div>
+    </div>
+  </div>
+</div>
+</div>

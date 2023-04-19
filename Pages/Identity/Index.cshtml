@@ -1,0 +1,140 @@
+﻿@page
+@model CostControlApp.Pages.Identity.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div id="titlu2">
+<h2>Catalog de produse</h2>
+</div>
+
+<div id="div2">
+    <button type="button" class="btn btn-outline-primary">
+    <a asp-page="Create">Create New</a>
+    </button>
+</div>
+
+<form sp-page="./Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Cauta dupa denumire:
+            <input type="text" name="cautaString" value="@Model.CurrentFiltru" />
+            <input type="submit" value="Search" class="btn btn-success" /> |
+            <a asp-page="./Index">Back to full list</a>
+        </p>
+</form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Sheet1[0].NrCrt)
+                
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sheet1[0].CodProdus)            
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sheet1[0].DimensiuniMm)             
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sheet1[0].Denumire)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sheet1[0].Greutate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sheet1[0].Buc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sheet1[0].Mp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sheet1[0].Ml)
+               
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sheet1[0].MpSistem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sheet1[0].Culoare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sheet1[0].NrBucPePachet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sheet1[0].Finisaj)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Sheet1) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NrCrt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodProdus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DimensiuniMm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Denumire)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Greutate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Buc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ml)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MpSistem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Culoare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NrBucPePachet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Finisaj)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ItemId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ItemId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ItemId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<nav aria-label="Page navigation example text-right">
+    <ul class="pagination float-right">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+

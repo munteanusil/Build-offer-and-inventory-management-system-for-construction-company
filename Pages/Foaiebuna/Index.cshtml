@@ -1,0 +1,87 @@
+﻿@page
+@model CostControlApp.Pages.Foaiebuna.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div id="titlu1">
+<h2>
+    Tipuri de manopera
+</h2>
+</div>
+
+<div id="div1">
+ <button type="button" class="btn btn-outline-primary">
+    <a asp-page="Create">Create New</a>
+</button>
+</div>
+
+<form sp-page ="./Index" method="get">
+    <div class ="form-actions no-color">
+        <p>
+            Cauta dupa denumire:
+            <input type="text" name="SearchString" value=" @Model.CurentFilter"/>
+            <input type="submit" value="Search" class="btn btn-success" /> |
+            <a asp-page=".Index">Back to full list</a>
+        </p>
+    </div>
+
+</form>
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th> <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
+                @Html.DisplayNameFor(model => model.Foaie1[0].Manopera)
+                </a>
+            </th>
+            <th><a asp-page="./Index" asp-route-sortOrder="@Model.UmSort">
+                @Html.DisplayNameFor(model => model.Foaie1[0].Um)
+                 </a>
+            </th>
+            <th><a asp-page="./Index" asp-route-sortOrder="@Model.EuroM2Sort">
+                @Html.DisplayNameFor(model => model.Foaie1[0].EuroM2)
+                </a>
+            </th>
+            <th><a asp-page="./Index" asp-route-sortOrder="@Model.CantitateSort">
+                @Html.DisplayNameFor(model => model.Foaie1[0].Cantitate)
+                </a>
+            </th>
+            <th><a asp-page="./Index" asp-route-sortOrder="@Model.TotalEur">
+                @Html.DisplayNameFor(model => model.Foaie1[0].TotalEur)
+                </a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Foaie1) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Manopera)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Um)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EuroM2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantitate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalEur)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ManoperaId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ManoperaId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ManoperaId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

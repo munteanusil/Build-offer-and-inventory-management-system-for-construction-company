@@ -1,0 +1,100 @@
+﻿@page
+@model CostControlApp.Pages.RazorOffer.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Offertum</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Offertum.OfferId" />
+            <div class="form-group">
+                <label asp-for="Offertum.NumarOferta" class="control-label"></label>
+                <input asp-for="Offertum.NumarOferta" class="form-control" />
+                <span asp-validation-for="Offertum.NumarOferta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.Proiect" class="control-label"></label>
+                <input asp-for="Offertum.Proiect" class="form-control" />
+                <span asp-validation-for="Offertum.Proiect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.DataOferta" class="control-label"></label>
+                <input asp-for="Offertum.DataOferta" class="form-control" />
+                <span asp-validation-for="Offertum.DataOferta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.DataExpirare" class="control-label"></label>
+                <input asp-for="Offertum.DataExpirare" class="form-control" />
+                <span asp-validation-for="Offertum.DataExpirare" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.Email" class="control-label"></label>
+                <input asp-for="Offertum.Email" class="form-control" />
+                <span asp-validation-for="Offertum.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.PhoneClient" class="control-label"></label>
+                <input asp-for="Offertum.PhoneClient" class="form-control" />
+                <span asp-validation-for="Offertum.PhoneClient" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.Destinatar" class="control-label"></label>
+                <input asp-for="Offertum.Destinatar" class="form-control" />
+                <span asp-validation-for="Offertum.Destinatar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.AdresaDestinatar" class="control-label"></label>
+                <input asp-for="Offertum.AdresaDestinatar" class="form-control" />
+                <span asp-validation-for="Offertum.AdresaDestinatar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.DetaliiProiect" class="control-label"></label>
+                <input asp-for="Offertum.DetaliiProiect" class="form-control" />
+                <span asp-validation-for="Offertum.DetaliiProiect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.Manopera" class="control-label"></label>
+                <input asp-for="Offertum.Manopera" class="form-control" />
+                <span asp-validation-for="Offertum.Manopera" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.Material" class="control-label"></label>
+                <input asp-for="Offertum.Material" class="form-control" />
+                <span asp-validation-for="Offertum.Material" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.UnitateMasura" class="control-label"></label>
+                <input asp-for="Offertum.UnitateMasura" class="form-control" />
+                <span asp-validation-for="Offertum.UnitateMasura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.EuroM2" class="control-label"></label>
+                <input asp-for="Offertum.EuroM2" class="form-control" />
+                <span asp-validation-for="Offertum.EuroM2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Offertum.Cantitatea" class="control-label"></label>
+                <input asp-for="Offertum.Cantitatea" class="form-control" />
+                <span asp-validation-for="Offertum.Cantitatea" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

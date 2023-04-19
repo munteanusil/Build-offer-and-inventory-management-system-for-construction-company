@@ -1,0 +1,113 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CostControlApp
+build_property.RootNamespace = CostControlApp
+build_property.ProjectDir = F:\Aplicatie\CostControlApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\Aplicatie\CostControlApp
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/Aplicatie/CostControlApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Foaiebuna/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9haWVidW5hXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Foaiebuna/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9haWVidW5hXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Foaiebuna/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9haWVidW5hXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Foaiebuna/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9haWVidW5hXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Foaiebuna/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9haWVidW5hXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Identity/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Identity/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Identity/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Identity/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Identity/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Produse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/RazorOffert/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF6b3JPZmZlcnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/RazorOffert/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF6b3JPZmZlcnRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/RazorOffert/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF6b3JPZmZlcnRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/RazorOffert/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF6b3JPZmZlcnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/RazorOffert/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF6b3JPZmZlcnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Shared/Manopera.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXE1hbm9wZXJhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Aplicatie/CostControlApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1oxtu0rttk

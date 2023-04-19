@@ -1,0 +1,49 @@
+﻿@page
+@model CostControlApp.Pages.Foaiebuna.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Foaie1</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Foaie1.Manopera)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Foaie1.Manopera)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Foaie1.Um)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Foaie1.Um)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Foaie1.EuroM2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Foaie1.EuroM2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Foaie1.Cantitate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Foaie1.Cantitate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Foaie1.TotalEur)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Foaie1.TotalEur)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Foaie1?.ManoperaId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

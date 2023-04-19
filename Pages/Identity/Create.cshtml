@@ -1,0 +1,94 @@
+﻿@page
+@model CostControlApp.Pages.Identity.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Sheet1</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Sheet1.ItemId" class="control-label"></label>
+                <input asp-for="Sheet1.ItemId" class="form-control" />
+                <span asp-validation-for="Sheet1.ItemId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheet1.NrCrt" class="control-label"></label>
+                <input asp-for="Sheet1.NrCrt" class="form-control" />
+                <span asp-validation-for="Sheet1.NrCrt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheet1.CodProdus" class="control-label"></label>
+                <input asp-for="Sheet1.CodProdus" class="form-control" />
+                <span asp-validation-for="Sheet1.CodProdus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheet1.DimensiuniMm" class="control-label"></label>
+                <input asp-for="Sheet1.DimensiuniMm" class="form-control" />
+                <span asp-validation-for="Sheet1.DimensiuniMm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheet1.Denumire" class="control-label"></label>
+                <input asp-for="Sheet1.Denumire" class="form-control" />
+                <span asp-validation-for="Sheet1.Denumire" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheet1.Greutate" class="control-label"></label>
+                <input asp-for="Sheet1.Greutate" class="form-control" />
+                <span asp-validation-for="Sheet1.Greutate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheet1.Buc" class="control-label"></label>
+                <input asp-for="Sheet1.Buc" class="form-control" />
+                <span asp-validation-for="Sheet1.Buc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheet1.Mp" class="control-label"></label>
+                <input asp-for="Sheet1.Mp" class="form-control" />
+                <span asp-validation-for="Sheet1.Mp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheet1.Ml" class="control-label"></label>
+                <input asp-for="Sheet1.Ml" class="form-control" />
+                <span asp-validation-for="Sheet1.Ml" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheet1.MpSistem" class="control-label"></label>
+                <input asp-for="Sheet1.MpSistem" class="form-control" />
+                <span asp-validation-for="Sheet1.MpSistem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheet1.Culoare" class="control-label"></label>
+                <input asp-for="Sheet1.Culoare" class="form-control" />
+                <span asp-validation-for="Sheet1.Culoare" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheet1.NrBucPePachet" class="control-label"></label>
+                <input asp-for="Sheet1.NrBucPePachet" class="form-control" />
+                <span asp-validation-for="Sheet1.NrBucPePachet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheet1.Finisaj" class="control-label"></label>
+                <input asp-for="Sheet1.Finisaj" class="form-control" />
+                <span asp-validation-for="Sheet1.Finisaj" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

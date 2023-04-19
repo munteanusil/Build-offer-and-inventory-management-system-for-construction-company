@@ -1,0 +1,135 @@
+﻿@page
+@addTagHelper*, Microsft.AspNetCore.Mvc.TagHelpers
+@model CostControlApp.Pages.RazorOffer.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].NumarOferta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].Proiect)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].DataOferta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].DataExpirare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].PhoneClient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].Destinatar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].AdresaDestinatar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].DetaliiProiect)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].Manopera)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].numemanopera)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].Material)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].UnitateMasura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].EuroM2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Offertum[0].Cantitatea)
+            </th>
+            <th>@Html.DisplayNameFor(model => model.Offertum[0].Total)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Offertum) {
+            <tr>
+                <td>
+                @Html.DisplayFor(modelItem => item.NumarOferta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Proiect)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataOferta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataExpirare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneClient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destinatar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdresaDestinatar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DetaliiProiect)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Manopera)                              
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.numemanopera)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Material)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitateMasura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EuroM2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantitatea)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Total)
+                </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.OfferId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.OfferId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.OfferId">Delete</a>
+            </td>
+        </tr>
+
+      
+}
+        <div>
+        <tr>
+            <td>Suma totală:</td>
+            <td>@Model.TotalSum</td>
+        </tr>
+        </div>
+    </tbody>
+</table>
+
+
+
